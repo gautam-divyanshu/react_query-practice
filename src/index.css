@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color:#181818;
+  color: whitesmoke;
+}
+
+.button {
+  @apply border-2 py-1 px-3 rounded-xl text-xl transition-all duration-300 ease-in-out font-semibold;
+}
+
+.button:hover {
+  @apply text-starWars border-starWars;
+}
+
+.card{
+  @apply bg-black
+}
