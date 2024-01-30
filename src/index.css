@@ -2,19 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.App {
+  width: 960px;
+  margin: 0 auto;
+}
+.content {
+  text-align: left;
+}
 body {
-  background-color:#181818;
+  background-color: #181818;
   color: whitesmoke;
+  text-align: center;
 }
 
-.button {
-  @apply border-2 py-1 px-3 rounded-xl text-xl transition-all duration-300 ease-in-out font-semibold;
+button {
+  @apply border-2 py-1 px-3 rounded-xl text-xl transition-all duration-300 ease-in-out font-semibold mx-5 my-10;
 }
 
 .button:hover {
   @apply text-starWars border-starWars;
 }
 
-.card{
-  @apply bg-black
+.card {
+  @apply bg-black mb-4 px-5 py-4 rounded-2xl;
 }

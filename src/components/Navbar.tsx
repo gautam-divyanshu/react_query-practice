@@ -5,13 +5,9 @@ type NavbarProps = {
 const Navbar = ({ setPage }: NavbarProps) => {
   return (
     <nav>
-      <div className="flex gap-8">
-        <button className="button" onClick={() => setPage("people")}>
-          People
-        </button>
-        <button className="button" onClick={() => setPage("planets")}>
-          Planets
-        </button>
+      <div>
+        <button onClick={() => setPage("people")}>People</button>
+        <button onClick={() => setPage("planets")}>Planets</button>
       </div>
     </nav>
   );

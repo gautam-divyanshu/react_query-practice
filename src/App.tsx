@@ -6,10 +6,10 @@ import Planets from "./components/Planets";
 export default function App() {
   const [page, setPage] = useState<string>("people");
   return (
-    <div className="container w-3/5 ml-auto mr-auto flex items-center gap-5 flex-col">
+    <div className="App">
       <h1 className="text-starWars mt-8 text-5xl font-bold">STAR WARS INFO</h1>
       <Navbar setPage={setPage} />
-      <div className="self-start">
+      <div className="content">
         {page === "planets" ? <Planets /> : <People />}
       </div>
     </div>
